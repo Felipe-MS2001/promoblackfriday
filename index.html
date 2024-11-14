@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scroll Journey</title>
+    <title>Scroll Journey Mobile</title>
     <style>
         body {
             margin: 0;
@@ -14,8 +14,9 @@
 
         .section {
             width: 100%;
-            height: 1500vh; /* Cada seção ocupa 100% da altura da tela */
-            background-size: cover;
+            height: auto; /* Altura automática para se ajustar ao conteúdo */
+            min-height: 100vh; /* Garante que a seção tenha pelo menos a altura da tela */
+            background-size: cover; /* Mantenha cover para preencher a seção */
             background-position: center;
             display: flex;
             justify-content: center;
@@ -35,13 +36,13 @@
 
         .whatsapp-button {
             position: absolute;
-            bottom: 440px;
-            padding: 40px 200px;
+            bottom: 20px; /* Ajuste a posição do botão */
+            padding: 15px 30px; /* Ajuste o padding para dispositivos móveis */
             background: #25D366;
             color: white;
             text-decoration: none;
             border-radius: 30px;
-            font-size: 20px;
+            font-size: 18px; /* Tamanho da fonte ajustado */
             font-weight: bold;
             transition: transform 0.3s, box-shadow 0.3s;
             box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
